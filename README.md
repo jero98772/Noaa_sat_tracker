@@ -13,7 +13,7 @@ A real-time satellite tracking application that monitors NOAA weather satellites
 
 ## Screenshots
 
-![]()
+![](https://raw.githubusercontent.com/jero98772/Noaa_sat_tracker/refs/heads/main/docs/1.png)
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ A real-time satellite tracking application that monitors NOAA weather satellites
 1. Clone the repository:
 ```bash
 git clone https://github.com/jero98772/Noaa_sat_tracker
-cd sat_tracker
+cd Noaa_sat_tracker
 ```
 
 2. Create a virtual environment (recommended):
