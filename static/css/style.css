@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.control-panel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    z-index: 1;
+    width: 250px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.satellite-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.satellite-item h3 {
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.visible {
+    background-color: #4CAF50;
+}
+
+.not-visible {
+    background-color: #F44336;
+}
+
+.satellite-info {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.toggle-predictions {
+    background-color: #2196F3;
+}
+
+.toggle-predictions:hover {
+    background-color: #0b7dda;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 2;
+}
+
+.marker {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.maplibregl-popup {
+    max-width: 250px;
+}
+
+.maplibregl-popup-content {
+    padding: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 1;
+} 

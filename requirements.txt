@@ -1,0 +1,4 @@
+Flask
+Flask-CORS
+numpy
+skyfield==1.47 

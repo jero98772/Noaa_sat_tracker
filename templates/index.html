@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOAA Satellite Tracker</title>
+
+    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <link href="/static/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="map"></div>
+
+    <div class="control-panel" id="control-panel">
+        <h2>NOAA Satellite Tracker</h2>
+        <p>Tracking NOAA weather satellites in real-time</p>
+        <div id="satellites-container"></div>
+        <button id="refresh-button">Refresh Data</button>
+    </div>
+
+    <div class="footer" id="footer">
+        Last updated: <span id="last-update">Loading...</span>
+    </div>
+
+    <div class="loading" id="loading">
+        <h3>Loading satellite data...</h3>
+        <p>Please wait while we fetch the latest TLE data and calculate positions.</p>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
